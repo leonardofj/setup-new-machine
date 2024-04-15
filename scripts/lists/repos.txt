@@ -1,0 +1,5 @@
+https://github.com/leonardofj/setup-new-machine.git
+https://github.com/leonardofj/trips.git
+https://github.com/leonardofj/leonardofj.github.io.git
+https://github.com/leonardofj/cv.git
+https://github.com/leonardofj/best-nine-app.git
