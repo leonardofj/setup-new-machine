@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# Ask for the administrator password upfront and run a
+# keep-alive to update existing `sudo` time stamp
+# until script has finished
+sudo -v
+while true; do
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
+done 2>/dev/null &
+
 ./packages.sh
 ./git-repos.sh
 
