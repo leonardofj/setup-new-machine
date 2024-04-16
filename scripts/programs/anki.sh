@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# https://docs.ankiweb.net/platform/linux/installing.html
 version="anki-24.04.1-linux-qt6"
 
 sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3 zstd
