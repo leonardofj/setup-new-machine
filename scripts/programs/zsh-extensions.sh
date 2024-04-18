@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# https://ivanaugustobd.medium.com/your-terminal-can-be-much-much-more-productive-5256424658e8
 echo "Setting up ZSH"
 curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 zsh

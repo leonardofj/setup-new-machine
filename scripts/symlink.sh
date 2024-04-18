@@ -9,10 +9,10 @@ function linkDotfile {
   dest="${HOME}/${1}"
   dateStr=$(date +%Y-%m-%d-%H%M)
 
-  if [ -h ~/${1} ]; then
+  if [ -h ~/"${1}" ]; then
     # Existing symlink
     echo "Removing existing symlink: ${dest}"
-    rm ${dest}
+    rm "${dest}"
 
   elif [ -f "${dest}" ]; then
     # Existing file
@@ -26,16 +26,15 @@ function linkDotfile {
   fi
 
   echo "Creating new symlink: ${dest}"
-  ln -s ${dotfilesDir}/${1} ${dest}
+  ln -s "${dotfilesDir}"/"${1}" "${dest}"
 }
 
 linkDotfile .bashrc
 linkDotfile .gitconfig
 linkDotfile .zshrc
 linkDotfile .zsh_history
-
-# link autostart files
-echo "Creating new symlink: ${HOME}/.config/autostart"
-ln -s ${dotfilesDir}/autostart ${HOME}/.config/autostart
+linkDotfile .config/autostart
+linkDotfile ".config/sublime-text-3/Packages/User/Package Control.sublime-settings"
+linkDotfile ".config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
 
 echo "Finished creating symlinks"
