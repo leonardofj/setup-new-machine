@@ -10,13 +10,4 @@ sudo apt install -y code
 rm microsoft.gpg
 
 # installing extensions
-function install {
-  name="${1}"
-  code --install-extension ${name} --force
-}
-
-mapfile -t extensions <lists/vscode_extensions.txt
-
-for extension in "${extensions[@]}"; do
-  install "$extension"
-done
+cat lists/vscode_extensions.txt | xargs -n 1 code --install-extension

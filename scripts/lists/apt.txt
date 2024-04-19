@@ -7,7 +7,7 @@
  wget
  python3.10-venv
  gpaste
- gnome-shell-extensions
+ gnome-extensions
  gnome-shell-extension-gpaste
  zsh
  fonts-powerline

@@ -36,5 +36,6 @@ linkDotfile .zsh_history
 linkDotfile .config/autostart
 linkDotfile ".config/sublime-text-3/Packages/User/Package Control.sublime-settings"
 linkDotfile ".config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
+linkDotfile ".config/Code/User/settings.json"
 
 echo "Finished creating symlinks"

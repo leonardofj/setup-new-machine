@@ -1,3 +1,2 @@
 dbeaver-ce
-sublime-text
 glate

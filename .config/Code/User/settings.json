@@ -1,0 +1,27 @@
+{
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "workbench.startupEditor": "none",
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.semicolons": "insert",
+  "workbench.editorAssociations": {
+    "*.sqlite3": "default"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.experiments.optOutFrom": [
+    "pythonTerminalEnvVarActivation"
+  ],
+  "python.terminal.activateEnvironment": false
+}

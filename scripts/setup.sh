@@ -17,11 +17,10 @@ done 2>/dev/null &
 for f in programs/*.sh; do bash "$f" -H; done
 
 ./symlink.sh
-./desktop.sh
+./appearance.sh
 
 # Get all upgrades
 sudo apt upgrade -y
 sudo apt autoremove -y
 
-# Fun hello
-echo "... and we're back!"
+echo "Ready to go!"
