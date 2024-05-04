@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Welcome! Starting to set up a new machine"
+
 # Ask for the administrator password upfront and run a
 # keep-alive to update existing `sudo` time stamp
 # until script has finished
@@ -10,17 +12,21 @@ while true; do
     kill -0 "$$" || exit
 done 2>/dev/null &
 
-./packages.sh
-./git-repos.sh
+bash packages.sh
+bash git-repos.sh
 
 # Run all scripts in programs/
 for f in programs/*.sh; do bash "$f" -H; done
 
-./symlink.sh
-./appearance.sh
+bash symlink.sh
+bash appearance.sh
 
 # Get all upgrades
 sudo apt upgrade -y
 sudo apt autoremove -y
 
-echo "Ready to go!"
+echo ""
+echo "Everything ready!"
+echo "The computer needs to be restarted"
+read -n 1 -s -r -p "Press any key to continue"
+sudo reboot
