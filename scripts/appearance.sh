@@ -17,4 +17,4 @@ done
 # Set up the desktop environment
 cp ../images/desktop.jpeg ~/Pictures/desktop.jpeg
 cp ../images/lock.jpg ~/Pictures/lock.jpg
-# dconf load -f / <../../settings.dconf
+dconf load -f / <../../settings.dconf

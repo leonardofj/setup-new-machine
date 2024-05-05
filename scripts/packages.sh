@@ -30,7 +30,7 @@ done
 
 # Installing npm packages
 for npkg in "${npm_packages[@]}"; do
-  npm install -g "$npkg"
+  sudo npm install -g "$npkg"
 done
 
 echo "Finished installing packages"
