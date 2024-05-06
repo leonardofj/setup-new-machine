@@ -35,6 +35,7 @@ linkDotfile .zshrc
 # linkDotfile .zsh_history
 linkDotfile .histfile
 linkDotfile .config/autostart
+mkdir -p "${HOME}/.config/sublime-text-3/Packages/User"
 linkDotfile ".config/sublime-text-3/Packages/User/Package Control.sublime-settings"
 linkDotfile ".config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
 linkDotfile ".config/Code/User/settings.json"
