@@ -1,5 +1,10 @@
+[apps/update-manager]
+first-run=false
+launch-count=10
+launch-time=int64 1731074587
+
 [com/ubuntu/update-notifier]
-release-check-time=uint32 1714863537
+release-check-time=uint32 1731024371
 
 [org/gnome/baobab/ui]
 active-chart='rings'
@@ -12,7 +17,10 @@ window-state=(980, 640, false)
 
 [org/gnome/deja-dup]
 backend='google'
-prompt-check='2024-05-04T23:09:58.211149Z'
+last-restore='2024-05-05T12:45:31.391587Z'
+prompt-check='2024-10-20T21:03:11.801848Z'
+window-height=500
+window-width=700
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -45,7 +53,8 @@ secondary-color='#000000000000'
 automatic-timezone=false
 
 [org/gnome/desktop/input-sources]
-sources=[('xkb', 'us')]
+mru-sources=[('xkb', 'us+intl'), ('xkb', 'us')]
+sources=[('xkb', 'us+intl')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
@@ -89,8 +98,60 @@ idle-delay=uint32 0
 [org/gnome/desktop/wm/preferences]
 num-workspaces=4
 
+[org/gnome/evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=true
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='thumbnails'
+sidebar-size=182
+sizing-mode='free'
+window-ratio=(1.8360369083196573, 1.0547699211603669)
+zoom=0.52595742422356462
+
 [org/gnome/evolution-data-server]
 migrated=true
+
+[org/gnome/file-roller/dialogs/extract]
+height=800
+recreate-folders=true
+skip-newer=false
+width=1000
+
+[org/gnome/file-roller/file-selector]
+show-hidden=false
+sidebar-size=300
+window-size=(-1, -1)
+
+[org/gnome/file-roller/listing]
+list-mode='as-folder'
+name-column-width=619
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[org/gnome/file-roller/ui]
+sidebar-width=200
+window-height=657
+window-width=1169
+
+[org/gnome/gnome-system-monitor]
+current-tab='resources'
+maximized=false
+show-dependencies=false
+show-whose-processes='user'
+window-height=833
+window-width=1010
+
+[org/gnome/gnome-system-monitor/disktreenew]
+col-6-visible=true
+col-6-width=0
+columns-order=[5]
+sort-col=1
+sort-order=0
 
 [org/gnome/mutter]
 dynamic-workspaces=false
@@ -100,13 +161,27 @@ edge-tiling=false
 toggle-tiled-left=@as []
 toggle-tiled-right=@as []
 
+[org/gnome/nautilus/compression]
+default-compression-format='encrypted_zip'
+
+[org/gnome/nautilus/icon-view]
+default-zoom-level='large'
+
+[org/gnome/nautilus/list-view]
+default-column-order=['name', 'size', 'type', 'owner', 'group', 'permissions', 'date_modified', 'date_accessed', 'date_created', 'recency', 'detailed_type']
+default-visible-columns=['name', 'size', 'date_modified', 'date_accessed', 'date_created']
+default-zoom-level='large'
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
+fts-enabled=true
 migrated-gtk-settings=true
 search-filter-time-type='last_modified'
+show-image-thumbnails='always'
 
 [org/gnome/nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(809, 822)
+maximized=false
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/leo/Pictures'
@@ -115,13 +190,25 @@ last-folder-path='/home/leo/Pictures'
 night-light-enabled=true
 night-light-temperature=uint32 2853
 
+[org/gnome/settings-daemon/plugins/media-keys]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
+logout=['<Control><Alt>l']
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Control><Alt>Delete'
+command='gnome-system-monitor'
+name='System monitor'
+
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
 
+[org/gnome/settings-daemon/plugins/sharing/rygel]
+enabled-connections=@as []
+
 [org/gnome/shell]
 enabled-extensions=['ding@rastersoft.com', 'ubuntu-dock@ubuntu.com', 'tiling-assistant@ubuntu.com', 'wsmatrix@martin.zurowietz.de', 'GPaste@gnome-shell-extensions.gnome.org']
-favorite-apps=['vivaldi-stable.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-calc.desktop', 'snap-store_snap-store.desktop', 'sublime_text.desktop', 'code.desktop', 'glate_glate.desktop']
+favorite-apps=['vivaldi-stable.desktop', 'org.gnome.Nautilus.desktop', 'libreoffice-calc.desktop', 'snap-store_snap-store.desktop', 'sublime_text.desktop', 'code.desktop', 'glate_glate.desktop', 'digikam_digikam.desktop']
 welcome-dialog-last-shown-version='46.0'
 
 [org/gnome/shell/extensions/dash-to-dock]
@@ -186,6 +273,39 @@ toggle-tiling-popup=@as []
 [org/gnome/shell/world-clocks]
 locations=@av []
 
+[org/gnome/shotwell/preferences/files]
+auto-import=false
+commit-metadata=false
+directory-pattern='%Y/%m/%d'
+
+[org/gnome/shotwell/preferences/ui]
+display-basic-properties=true
+display-event-comments=false
+display-extended-properties=false
+display-photo-comments=false
+display-photo-ratings=true
+display-photo-tags=true
+display-photo-titles=false
+display-search-bar=false
+display-sidebar=true
+event-photos-sort-ascending=true
+event-photos-sort-by=2
+events-sort-ascending=false
+library-photos-sort-ascending=false
+library-photos-sort-by=2
+photo-thumbnail-scale=348
+show-welcome-dialog=false
+sidebar-position=292
+transparent-background-type='checkered'
+
+[org/gnome/shotwell/preferences/window]
+direct-height=768
+direct-maximize=false
+direct-width=1024
+library-height=945
+library-maximize=false
+library-width=1920
+
 [org/gtk/gtk4/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
@@ -195,8 +315,8 @@ sort-column='name'
 sort-directories-first=true
 sort-order='ascending'
 type-format='category'
-view-type='list'
-window-size=(819, 372)
+view-type='grid'
+window-size=(993, 652)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -209,8 +329,11 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(358, 48)
+window-position=(359, 49)
 window-size=(1203, 902)
 
 [system/locale]
 region='en_IE.UTF-8'
+
+[system/proxy]
+mode='none'

@@ -18,3 +18,7 @@ done
 cp ../images/desktop.jpeg ~/Pictures/desktop.jpeg
 cp ../images/lock.jpg ~/Pictures/lock.jpg
 dconf load -f / <../../settings.dconf
+
+# Set up ç combination
+sudo cp /usr/share/X11/locale/en_US.UTF-8/Compose ~/.XCompose
+sudo sed -i ~/.XCompose -e 's/ć/ç/g' -e 's/Ć/Ç/g'
